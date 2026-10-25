@@ -1,0 +1,98 @@
+{
+  "seed": 2026,
+  "start": "2024-01-01",
+  "t1_end": "2025-01-01",
+  "t2_end": "2026-01-01",
+  "target_rows": 650000,
+  "counts": {
+    "T1": {
+      "ProductionLog": 311016,
+      "Weather_Data": 70272,
+      "Unit": 39,
+      "Model": 15,
+      "Manufacturer": 8,
+      "Zone": 8
+    },
+    "T2": {
+      "ProductionLog": 665832,
+      "Weather_Data": 140352,
+      "Unit": 42,
+      "Model": 16,
+      "Manufacturer": 8,
+      "Zone": 8
+    }
+  },
+  "delta_rows": {
+    "ProductionLog": 354816,
+    "Weather_Data": 70080
+  },
+  "t2_changes": {
+    "new_models": [
+      {
+        "ModelID": 16,
+        "ManufacturerID": 6,
+        "ModelName": "Hi-MO 9 Array 1500kWp",
+        "UnitType": "Solar",
+        "ExpectedLifespanYears": 30,
+        "MaxPowerCapacity": "1500.00"
+      }
+    ],
+    "new_units": [
+      {
+        "UnitID": "PV-GDA-03",
+        "ModelID": 16,
+        "ZoneID": 1,
+        "InstallationDate": "2025-07-02 00:00:00"
+      },
+      {
+        "UnitID": "PV-POZ-05",
+        "ModelID": 16,
+        "ZoneID": 7,
+        "InstallationDate": "2025-11-07 00:00:00"
+      },
+      {
+        "UnitID": "WT-GDA-04",
+        "ModelID": 3,
+        "ZoneID": 1,
+        "InstallationDate": "2025-02-24 00:00:00"
+      }
+    ],
+    "manufacturer_changed": {
+      "ManufacturerID": 2,
+      "before": {
+        "ManufacturerName": "Siemens Gamesa",
+        "Country": "Spain"
+      },
+      "after": {
+        "ManufacturerName": "Siemens Energy",
+        "Country": "Germany"
+      }
+    },
+    "unit_repowered": {
+      "UnitID": "PV-POZ-01",
+      "before": {
+        "ModelID": 10,
+        "InstallationDate": "2016-06-29 00:00:00"
+      },
+      "after": {
+        "ModelID": 16,
+        "InstallationDate": "2025-05-30 00:00:00"
+      },
+      "maintenance_from": "2025-05-27 00:00:00"
+    },
+    "zones_extended": [
+      {
+        "ZoneID": 1,
+        "ZoneName": "Gdansk",
+        "before": 932000,
+        "after": 1236000
+      },
+      {
+        "ZoneID": 7,
+        "ZoneName": "Poznan",
+        "before": 393000,
+        "after": 417000
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+== Integrity
+  OK   T1: primary keys unique
+  OK   T1: ProductionLog.UnitID -> Unit
+  OK   T1: Unit -> Model, Zone
+  OK   T1: Model -> Manufacturer
+  OK   T1: one reading per unit and hour
+  OK   T1: one weather row per zone and hour
+  OK   T1: VARCHAR lengths fit
+  OK   T1: status domain
+  OK   T1: no negatives / NULLs
+  OK   T1: every reading has a weather row (ZoneID + hour)
+  OK   T1: no readings before installation
+  OK   T2: primary keys unique
+  OK   T2: ProductionLog.UnitID -> Unit
+  OK   T2: Unit -> Model, Zone
+  OK   T2: Model -> Manufacturer
+  OK   T2: one reading per unit and hour
+  OK   T2: one weather row per zone and hour
+  OK   T2: VARCHAR lengths fit
+  OK   T2: status domain
+  OK   T2: no negatives / NULLs
+  OK   T2: every reading has a weather row (ZoneID + hour)
+
+== T1 -> T2
+  OK   T1 ProductionLog is an exact prefix of T2
+  OK   T1 Weather is an exact prefix of T2
+  OK   new Unit and Model rows in T2
+  changed Manufacturer rows: 1
+     2: {'ManufacturerName': 'Siemens Gamesa', 'Country': 'Spain'} -> {'ManufacturerName': 'Siemens Energy', 'Country': 'Germany'}
+  changed Zone rows: 2
+     1: {'ZoneName': 'Gdansk', 'AreaSizeSqm': 932000} -> {'ZoneName': 'Gdansk', 'AreaSizeSqm': 1236000}
+     7: {'ZoneName': 'Poznan', 'AreaSizeSqm': 393000} -> {'ZoneName': 'Poznan', 'AreaSizeSqm': 417000}
+  changed Unit rows: 1
+     PV-POZ-01: {'ModelID': 10, 'ZoneID': 7, 'InstallationDate': '2016-06-29 00:00:00'} -> {'ModelID': 16, 'ZoneID': 7, 'InstallationDate': '2025-05-30 00:00:00'}
+  OK   T1 + ProductionLog_new == T2 ProductionLog
+
+== Weather realism (T2, per zone)
+  calendar year 2024:
+              T_year  T_jan  T_jul  T_min  T_max  hours_over30  wind_mean  wind_max  precip_mm  rain_hours_pct  cloud_mean  sunshine_h
+ZoneName                                                                                                                              
+Bialystok        8.0   -3.6   18.7  -15.6   31.4            12        3.9      14.6      608.5             6.5         5.5      1591.0
+Bydgoszcz        9.1   -2.5   19.7  -13.7   34.7            32        3.8      14.7      631.0             6.2         5.1      1804.0
+Gdansk           9.4   -0.5   18.9  -15.1   30.5             3        4.7      16.9      616.2             6.5         5.5      1639.0
+Olsztyn          8.3   -3.4   19.6  -14.9   35.0            43        4.1      15.9      544.3             6.5         5.4      1653.5
+Poznan           9.6   -2.6   21.0  -14.1   38.7            69        3.9      13.9      463.6             5.3         5.2      1769.4
+Szczecin         9.7   -0.9   20.4  -13.7   32.4            15        4.1      14.7      560.3             5.9         5.3      1685.6
+Warszawa         9.3   -3.4   20.6  -14.2   36.5            42        3.7      13.2      575.3             5.8         5.3      1716.1
+Zielona Gora     9.9   -0.3   20.7  -15.9   34.6            22        3.6      13.1      617.1             6.4         5.4      1624.0
+
+  CloudCover distribution (% of hours): {0: 8.5, 1: 7.6, 2: 6.6, 3: 6.4, 4: 6.8, 5: 7.8, 6: 9.6, 7: 15.1, 8: 31.5}
+  days with daily mean wind > 30 km/h (8.33 m/s): {'Bialystok': 9, 'Bydgoszcz': 15, 'Gdansk': 37, 'Olsztyn': 15, 'Poznan': 11, 'Szczecin': 26, 'Warszawa': 5, 'Zielona Gora': 17}
+  days 'Sunny' (daily mean CloudCover < 2): {'Bialystok': 79, 'Bydgoszcz': 86, 'Gdansk': 80, 'Olsztyn': 74, 'Poznan': 68, 'Szczecin': 77, 'Warszawa': 69, 'Zielona Gora': 77}
+  days 'Cloudy' (daily mean CloudCover > 6): {'Bialystok': 327, 'Bydgoszcz': 292, 'Gdansk': 342, 'Olsztyn': 330, 'Poznan': 303, 'Szczecin': 334, 'Warszawa': 317, 'Zielona Gora': 328}
+
+== Production realism (T2)
+  status share %:
+OperationalStatus  Fault  Maintenance  Operating
+UnitType                                        
+Solar               0.36         0.10      99.54
+Wind                1.69         0.44      97.87
+  2024 capacity factor: {'Solar': 11.2, 'Wind': 27.8} %  (PL typical: wind 25-30, PV 10-12)
+  by zone:
+ZoneID       1     2     3     4     5     6     7     8
+UnitType                                                
+Solar     11.6   9.7  10.9  11.6  11.7  10.8  11.6  10.6
+Wind      34.1  23.7  27.7  26.4  23.8  33.6  23.0  26.3
+  monthly energy [GWh]:
+UnitType  Solar   Wind
+month                 
+2024-01    0.26   6.28
+2024-02    0.35  12.38
+2024-03    0.95  13.13
+2024-04    1.68   7.55
+2024-05    2.60   9.94
+2024-06    2.16   9.40
+2024-07    2.85   5.77
+2024-08    2.24   7.69
+2024-09    1.75   9.70
+2024-10    1.22   9.23
+2024-11    0.49  16.50
+2024-12    0.24  13.92
+2025-01    0.13  14.17
+2025-02    0.44  12.84
+2025-03    1.29  11.87
+2025-04    2.15  12.22
+2025-05    2.90  16.69
+2025-06    3.84   3.96
+2025-07    3.55  10.38
+2025-08    3.73   4.83
+2025-09    2.08  11.93
+2025-10    1.35  13.07
+2025-11    0.66  16.62
+2025-12    0.31  11.55
+  Pearson r daily wind vs energy per turbine: min 0.89, median 0.94, max 0.96
+  PV daily yield kWh/kWp: sunny days 6.11 vs cloudy days 1.28
+  aging, calendar year 2025:
+  Wind: units 18, >5y 13, <1y 2, relative CF change per year of age -2.97%
+  Solar: units 20, >5y 3, <1y 3, relative CF change per year of age -1.10%
+  PV readings with T > 30°C: 1358; wind readings with T > 30°C: 939
+
+ALL CHECKS PASSED
