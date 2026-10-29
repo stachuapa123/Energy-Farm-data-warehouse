@@ -1,4 +1,4 @@
-UnitID,ModelID,ZoneID,InstallationDate
+UnitID,ModelID,ZoneID,InstallationDateTime
 PV-BIA-01,13,4,2021-02-16 00:00:00
 PV-BIA-02,12,4,2022-09-26 00:00:00
 PV-BIA-03,14,4,2024-02-13 00:00:00

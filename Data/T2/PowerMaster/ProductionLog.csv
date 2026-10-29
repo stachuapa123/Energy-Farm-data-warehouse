@@ -1,4 +1,4 @@
-ProductionLogID,UnitID,LogDate,EnergyProduced,OperationalStatus
+ProductionLogID,UnitID,LogDateTime,EnergyProduced,OperationalStatus
 1,PV-BIA-01,2024-01-01 00:00:00,0.000,Operating
 2,PV-BIA-02,2024-01-01 00:00:00,0.000,Operating
 3,PV-BYD-01,2024-01-01 00:00:00,0.000,Operating
