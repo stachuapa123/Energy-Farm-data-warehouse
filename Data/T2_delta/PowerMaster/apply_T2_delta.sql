@@ -15,7 +15,6 @@ EXEC (N'BULK INSERT dbo.Unit  FROM ''' + @dir + N'Unit_new.csv'  + @opts);
 
 /* 2. changes of existing dimension rows */
 UPDATE dbo.Manufacturer SET ManufacturerName = 'Siemens Energy', Country = 'Germany' WHERE ManufacturerID = 2;   -- was 'Siemens Gamesa', 'Spain'
-UPDATE dbo.Unit SET ModelID = 16, InstallationDate = '2025-05-30T00:00:00' WHERE UnitID = 'PV-POZ-01';   -- repowered, was ModelID 10, installed 2016-06-29
 UPDATE dbo.Zone SET AreaSizeSqm = 1236000 WHERE ZoneID = 1;   -- Gdansk extended, was 932000
 UPDATE dbo.Zone SET AreaSizeSqm = 417000 WHERE ZoneID = 7;   -- Poznan extended, was 393000
 
