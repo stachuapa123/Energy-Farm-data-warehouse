@@ -1,0 +1,25 @@
+{
+  "measures": [
+    "EnergyProduction.avgDailyEnergyPerUnit",
+    "EnergyProduction.avgWindSpeed",
+    "EnergyProduction.unitDays"
+  ],
+  "dimensions": [
+    "EnergyProduction.dailyWindSpeedCategory"
+  ],
+  "filters": [
+    {
+      "member": "EnergyProduction.unitType",
+      "operator": "equals",
+      "values": [
+        "Wind"
+      ]
+    }
+  ],
+  "order": [
+    [
+      "EnergyProduction.avgWindSpeed",
+      "asc"
+    ]
+  ]
+}

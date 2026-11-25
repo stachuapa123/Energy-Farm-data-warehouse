@@ -1,0 +1,32 @@
+{
+  "measures": [
+    "EnergyProduction.capacityFactor",
+    "EnergyProduction.avgDailyEnergyPerUnit",
+    "EnergyProduction.unitDays"
+  ],
+  "dimensions": [
+    "EnergyProduction.unitType",
+    "EnergyProduction.unitId",
+    "EnergyProduction.modelName",
+    "EnergyProduction.manufacturerName"
+  ],
+  "filters": [
+    {
+      "member": "EnergyProduction.optimalWeatherDay",
+      "operator": "equals",
+      "values": [
+        "Yes"
+      ]
+    }
+  ],
+  "order": [
+    [
+      "EnergyProduction.unitType",
+      "asc"
+    ],
+    [
+      "EnergyProduction.capacityFactor",
+      "asc"
+    ]
+  ]
+}

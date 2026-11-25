@@ -1,0 +1,20 @@
+{
+  "measures": [
+    "EnergyProduction.capacityFactor",
+    "EnergyProduction.unitsCount"
+  ],
+  "dimensions": [
+    "EnergyProduction.unitType",
+    "EnergyProduction.ageCategory"
+  ],
+  "order": [
+    [
+      "EnergyProduction.unitType",
+      "asc"
+    ],
+    [
+      "EnergyProduction.ageCategory",
+      "asc"
+    ]
+  ]
+}

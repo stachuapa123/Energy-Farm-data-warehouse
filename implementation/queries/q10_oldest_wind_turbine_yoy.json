@@ -1,0 +1,29 @@
+{
+  "measures": [
+    "EnergyProduction.totalEnergy",
+    "EnergyProduction.sameMonthLastYearEnergy",
+    "EnergyProduction.energyChangeVsSameMonthLastYear"
+  ],
+  "dimensions": [
+    "EnergyProduction.unitId"
+  ],
+  "filters": [
+    {
+      "member": "EnergyProduction.oldestWindTurbine",
+      "operator": "equals",
+      "values": [
+        "Yes"
+      ]
+    }
+  ],
+  "timeDimensions": [
+    {
+      "dimension": "EnergyProduction.readingDate",
+      "granularity": "month",
+      "dateRange": [
+        "2025-12-01",
+        "2025-12-31"
+      ]
+    }
+  ]
+}

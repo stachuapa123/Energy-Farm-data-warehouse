@@ -1,0 +1,25 @@
+{
+  "measures": [
+    "EnergyProduction.avgHourlyEnergy",
+    "EnergyProduction.readingsCount"
+  ],
+  "dimensions": [
+    "EnergyProduction.unitType"
+  ],
+  "filters": [
+    {
+      "member": "EnergyProduction.olderUnit",
+      "operator": "equals",
+      "values": [
+        "Yes"
+      ]
+    },
+    {
+      "member": "EnergyProduction.temperatureCategory",
+      "operator": "equals",
+      "values": [
+        "hot"
+      ]
+    }
+  ]
+}

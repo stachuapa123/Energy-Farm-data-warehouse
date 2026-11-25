@@ -1,0 +1,32 @@
+{
+  "measures": [
+    "EnergyProduction.totalEnergy",
+    "EnergyProduction.avgHourlyEnergy",
+    "EnergyProduction.capacityFactor"
+  ],
+  "dimensions": [
+    "EnergyProduction.olderUnit",
+    "EnergyProduction.ageCategory"
+  ],
+  "filters": [
+    {
+      "member": "EnergyProduction.ageCategory",
+      "operator": "equals",
+      "values": [
+        "under 1 year",
+        "5-10 years",
+        "over 10 years"
+      ]
+    }
+  ],
+  "order": [
+    [
+      "EnergyProduction.olderUnit",
+      "asc"
+    ],
+    [
+      "EnergyProduction.ageCategory",
+      "asc"
+    ]
+  ]
+}

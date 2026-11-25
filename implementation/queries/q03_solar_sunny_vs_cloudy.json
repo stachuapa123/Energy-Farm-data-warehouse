@@ -1,0 +1,26 @@
+{
+  "measures": [
+    "EnergyProduction.avgDailyEnergyPerUnit",
+    "EnergyProduction.unitDays"
+  ],
+  "dimensions": [
+    "EnergyProduction.skyConditionOfDay"
+  ],
+  "filters": [
+    {
+      "member": "EnergyProduction.unitType",
+      "operator": "equals",
+      "values": [
+        "Solar"
+      ]
+    },
+    {
+      "member": "EnergyProduction.skyConditionOfDay",
+      "operator": "equals",
+      "values": [
+        "Sunny",
+        "Cloudy"
+      ]
+    }
+  ]
+}
