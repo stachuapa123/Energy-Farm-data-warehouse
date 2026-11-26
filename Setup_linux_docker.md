@@ -4,6 +4,8 @@ These steps run SQL Server 2022 in a Docker container on Linux (written for Fedo
 
 SQL Server runs **inside the container**, so all file paths used by the SQL scripts are paths inside the container (`/var/opt/mssql/import/...`), not paths on your own disk.
 
+> **Using the repository `docker-compose.yml` instead:** `docker compose up -d` (from the repository root) starts SQL Server as container **`mssql-db`** with the same `sa` password as `docker-compose.yml`, so skip step 1 and use `mssql-db` wherever this guide says `sql1`. `./run.sh sources` runs steps 3, 4, 6 and 7 for snapshot T1. The data warehouse itself is described in `README.md`.
+
 ## 0. Before you start
 
 Make sure the Docker service is running, and open a terminal in the project root (the folder that contains `Data`, `Schemas`, `Generator`).

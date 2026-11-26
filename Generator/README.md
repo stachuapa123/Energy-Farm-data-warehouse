@@ -14,6 +14,7 @@ python generator.py                          # default: ~650k ProductionLog rows
 python generator.py --target-rows 1000000    # ~1M rows (scales the number of units)
 python generator.py --start 2024-01-01 --t1-end 2025-01-01 --t2-end 2026-01-01 --seed 2026 --out Data
 python validate.py Data                      # integrity + realism report
+python export_bulk.py                        # warehouse-shaped sample data -> ../bulk/
 ```
 
 Runs in about 5 s. The same seed always gives the same data.

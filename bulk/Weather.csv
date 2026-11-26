@@ -1,0 +1,1202 @@
+AvgTemperatureCategory,AvgWindSpeedCategory,PrecipitationCategory,CloudCoverCategory,SunshineDurationCategory
+unknown,unknown,unknown,unknown,unknown
+freezing,calm,none,clear,none
+freezing,calm,none,clear,low
+freezing,calm,none,clear,medium
+freezing,calm,none,clear,high
+freezing,calm,none,clear,full
+freezing,calm,none,partly cloudy,none
+freezing,calm,none,partly cloudy,low
+freezing,calm,none,partly cloudy,medium
+freezing,calm,none,partly cloudy,high
+freezing,calm,none,partly cloudy,full
+freezing,calm,none,overcast,none
+freezing,calm,none,overcast,low
+freezing,calm,none,overcast,medium
+freezing,calm,none,overcast,high
+freezing,calm,none,overcast,full
+freezing,calm,light,clear,none
+freezing,calm,light,clear,low
+freezing,calm,light,clear,medium
+freezing,calm,light,clear,high
+freezing,calm,light,clear,full
+freezing,calm,light,partly cloudy,none
+freezing,calm,light,partly cloudy,low
+freezing,calm,light,partly cloudy,medium
+freezing,calm,light,partly cloudy,high
+freezing,calm,light,partly cloudy,full
+freezing,calm,light,overcast,none
+freezing,calm,light,overcast,low
+freezing,calm,light,overcast,medium
+freezing,calm,light,overcast,high
+freezing,calm,light,overcast,full
+freezing,calm,moderate,clear,none
+freezing,calm,moderate,clear,low
+freezing,calm,moderate,clear,medium
+freezing,calm,moderate,clear,high
+freezing,calm,moderate,clear,full
+freezing,calm,moderate,partly cloudy,none
+freezing,calm,moderate,partly cloudy,low
+freezing,calm,moderate,partly cloudy,medium
+freezing,calm,moderate,partly cloudy,high
+freezing,calm,moderate,partly cloudy,full
+freezing,calm,moderate,overcast,none
+freezing,calm,moderate,overcast,low
+freezing,calm,moderate,overcast,medium
+freezing,calm,moderate,overcast,high
+freezing,calm,moderate,overcast,full
+freezing,calm,heavy,clear,none
+freezing,calm,heavy,clear,low
+freezing,calm,heavy,clear,medium
+freezing,calm,heavy,clear,high
+freezing,calm,heavy,clear,full
+freezing,calm,heavy,partly cloudy,none
+freezing,calm,heavy,partly cloudy,low
+freezing,calm,heavy,partly cloudy,medium
+freezing,calm,heavy,partly cloudy,high
+freezing,calm,heavy,partly cloudy,full
+freezing,calm,heavy,overcast,none
+freezing,calm,heavy,overcast,low
+freezing,calm,heavy,overcast,medium
+freezing,calm,heavy,overcast,high
+freezing,calm,heavy,overcast,full
+freezing,light,none,clear,none
+freezing,light,none,clear,low
+freezing,light,none,clear,medium
+freezing,light,none,clear,high
+freezing,light,none,clear,full
+freezing,light,none,partly cloudy,none
+freezing,light,none,partly cloudy,low
+freezing,light,none,partly cloudy,medium
+freezing,light,none,partly cloudy,high
+freezing,light,none,partly cloudy,full
+freezing,light,none,overcast,none
+freezing,light,none,overcast,low
+freezing,light,none,overcast,medium
+freezing,light,none,overcast,high
+freezing,light,none,overcast,full
+freezing,light,light,clear,none
+freezing,light,light,clear,low
+freezing,light,light,clear,medium
+freezing,light,light,clear,high
+freezing,light,light,clear,full
+freezing,light,light,partly cloudy,none
+freezing,light,light,partly cloudy,low
+freezing,light,light,partly cloudy,medium
+freezing,light,light,partly cloudy,high
+freezing,light,light,partly cloudy,full
+freezing,light,light,overcast,none
+freezing,light,light,overcast,low
+freezing,light,light,overcast,medium
+freezing,light,light,overcast,high
+freezing,light,light,overcast,full
+freezing,light,moderate,clear,none
+freezing,light,moderate,clear,low
+freezing,light,moderate,clear,medium
+freezing,light,moderate,clear,high
+freezing,light,moderate,clear,full
+freezing,light,moderate,partly cloudy,none
+freezing,light,moderate,partly cloudy,low
+freezing,light,moderate,partly cloudy,medium
+freezing,light,moderate,partly cloudy,high
+freezing,light,moderate,partly cloudy,full
+freezing,light,moderate,overcast,none
+freezing,light,moderate,overcast,low
+freezing,light,moderate,overcast,medium
+freezing,light,moderate,overcast,high
+freezing,light,moderate,overcast,full
+freezing,light,heavy,clear,none
+freezing,light,heavy,clear,low
+freezing,light,heavy,clear,medium
+freezing,light,heavy,clear,high
+freezing,light,heavy,clear,full
+freezing,light,heavy,partly cloudy,none
+freezing,light,heavy,partly cloudy,low
+freezing,light,heavy,partly cloudy,medium
+freezing,light,heavy,partly cloudy,high
+freezing,light,heavy,partly cloudy,full
+freezing,light,heavy,overcast,none
+freezing,light,heavy,overcast,low
+freezing,light,heavy,overcast,medium
+freezing,light,heavy,overcast,high
+freezing,light,heavy,overcast,full
+freezing,moderate,none,clear,none
+freezing,moderate,none,clear,low
+freezing,moderate,none,clear,medium
+freezing,moderate,none,clear,high
+freezing,moderate,none,clear,full
+freezing,moderate,none,partly cloudy,none
+freezing,moderate,none,partly cloudy,low
+freezing,moderate,none,partly cloudy,medium
+freezing,moderate,none,partly cloudy,high
+freezing,moderate,none,partly cloudy,full
+freezing,moderate,none,overcast,none
+freezing,moderate,none,overcast,low
+freezing,moderate,none,overcast,medium
+freezing,moderate,none,overcast,high
+freezing,moderate,none,overcast,full
+freezing,moderate,light,clear,none
+freezing,moderate,light,clear,low
+freezing,moderate,light,clear,medium
+freezing,moderate,light,clear,high
+freezing,moderate,light,clear,full
+freezing,moderate,light,partly cloudy,none
+freezing,moderate,light,partly cloudy,low
+freezing,moderate,light,partly cloudy,medium
+freezing,moderate,light,partly cloudy,high
+freezing,moderate,light,partly cloudy,full
+freezing,moderate,light,overcast,none
+freezing,moderate,light,overcast,low
+freezing,moderate,light,overcast,medium
+freezing,moderate,light,overcast,high
+freezing,moderate,light,overcast,full
+freezing,moderate,moderate,clear,none
+freezing,moderate,moderate,clear,low
+freezing,moderate,moderate,clear,medium
+freezing,moderate,moderate,clear,high
+freezing,moderate,moderate,clear,full
+freezing,moderate,moderate,partly cloudy,none
+freezing,moderate,moderate,partly cloudy,low
+freezing,moderate,moderate,partly cloudy,medium
+freezing,moderate,moderate,partly cloudy,high
+freezing,moderate,moderate,partly cloudy,full
+freezing,moderate,moderate,overcast,none
+freezing,moderate,moderate,overcast,low
+freezing,moderate,moderate,overcast,medium
+freezing,moderate,moderate,overcast,high
+freezing,moderate,moderate,overcast,full
+freezing,moderate,heavy,clear,none
+freezing,moderate,heavy,clear,low
+freezing,moderate,heavy,clear,medium
+freezing,moderate,heavy,clear,high
+freezing,moderate,heavy,clear,full
+freezing,moderate,heavy,partly cloudy,none
+freezing,moderate,heavy,partly cloudy,low
+freezing,moderate,heavy,partly cloudy,medium
+freezing,moderate,heavy,partly cloudy,high
+freezing,moderate,heavy,partly cloudy,full
+freezing,moderate,heavy,overcast,none
+freezing,moderate,heavy,overcast,low
+freezing,moderate,heavy,overcast,medium
+freezing,moderate,heavy,overcast,high
+freezing,moderate,heavy,overcast,full
+freezing,strong,none,clear,none
+freezing,strong,none,clear,low
+freezing,strong,none,clear,medium
+freezing,strong,none,clear,high
+freezing,strong,none,clear,full
+freezing,strong,none,partly cloudy,none
+freezing,strong,none,partly cloudy,low
+freezing,strong,none,partly cloudy,medium
+freezing,strong,none,partly cloudy,high
+freezing,strong,none,partly cloudy,full
+freezing,strong,none,overcast,none
+freezing,strong,none,overcast,low
+freezing,strong,none,overcast,medium
+freezing,strong,none,overcast,high
+freezing,strong,none,overcast,full
+freezing,strong,light,clear,none
+freezing,strong,light,clear,low
+freezing,strong,light,clear,medium
+freezing,strong,light,clear,high
+freezing,strong,light,clear,full
+freezing,strong,light,partly cloudy,none
+freezing,strong,light,partly cloudy,low
+freezing,strong,light,partly cloudy,medium
+freezing,strong,light,partly cloudy,high
+freezing,strong,light,partly cloudy,full
+freezing,strong,light,overcast,none
+freezing,strong,light,overcast,low
+freezing,strong,light,overcast,medium
+freezing,strong,light,overcast,high
+freezing,strong,light,overcast,full
+freezing,strong,moderate,clear,none
+freezing,strong,moderate,clear,low
+freezing,strong,moderate,clear,medium
+freezing,strong,moderate,clear,high
+freezing,strong,moderate,clear,full
+freezing,strong,moderate,partly cloudy,none
+freezing,strong,moderate,partly cloudy,low
+freezing,strong,moderate,partly cloudy,medium
+freezing,strong,moderate,partly cloudy,high
+freezing,strong,moderate,partly cloudy,full
+freezing,strong,moderate,overcast,none
+freezing,strong,moderate,overcast,low
+freezing,strong,moderate,overcast,medium
+freezing,strong,moderate,overcast,high
+freezing,strong,moderate,overcast,full
+freezing,strong,heavy,clear,none
+freezing,strong,heavy,clear,low
+freezing,strong,heavy,clear,medium
+freezing,strong,heavy,clear,high
+freezing,strong,heavy,clear,full
+freezing,strong,heavy,partly cloudy,none
+freezing,strong,heavy,partly cloudy,low
+freezing,strong,heavy,partly cloudy,medium
+freezing,strong,heavy,partly cloudy,high
+freezing,strong,heavy,partly cloudy,full
+freezing,strong,heavy,overcast,none
+freezing,strong,heavy,overcast,low
+freezing,strong,heavy,overcast,medium
+freezing,strong,heavy,overcast,high
+freezing,strong,heavy,overcast,full
+cold,calm,none,clear,none
+cold,calm,none,clear,low
+cold,calm,none,clear,medium
+cold,calm,none,clear,high
+cold,calm,none,clear,full
+cold,calm,none,partly cloudy,none
+cold,calm,none,partly cloudy,low
+cold,calm,none,partly cloudy,medium
+cold,calm,none,partly cloudy,high
+cold,calm,none,partly cloudy,full
+cold,calm,none,overcast,none
+cold,calm,none,overcast,low
+cold,calm,none,overcast,medium
+cold,calm,none,overcast,high
+cold,calm,none,overcast,full
+cold,calm,light,clear,none
+cold,calm,light,clear,low
+cold,calm,light,clear,medium
+cold,calm,light,clear,high
+cold,calm,light,clear,full
+cold,calm,light,partly cloudy,none
+cold,calm,light,partly cloudy,low
+cold,calm,light,partly cloudy,medium
+cold,calm,light,partly cloudy,high
+cold,calm,light,partly cloudy,full
+cold,calm,light,overcast,none
+cold,calm,light,overcast,low
+cold,calm,light,overcast,medium
+cold,calm,light,overcast,high
+cold,calm,light,overcast,full
+cold,calm,moderate,clear,none
+cold,calm,moderate,clear,low
+cold,calm,moderate,clear,medium
+cold,calm,moderate,clear,high
+cold,calm,moderate,clear,full
+cold,calm,moderate,partly cloudy,none
+cold,calm,moderate,partly cloudy,low
+cold,calm,moderate,partly cloudy,medium
+cold,calm,moderate,partly cloudy,high
+cold,calm,moderate,partly cloudy,full
+cold,calm,moderate,overcast,none
+cold,calm,moderate,overcast,low
+cold,calm,moderate,overcast,medium
+cold,calm,moderate,overcast,high
+cold,calm,moderate,overcast,full
+cold,calm,heavy,clear,none
+cold,calm,heavy,clear,low
+cold,calm,heavy,clear,medium
+cold,calm,heavy,clear,high
+cold,calm,heavy,clear,full
+cold,calm,heavy,partly cloudy,none
+cold,calm,heavy,partly cloudy,low
+cold,calm,heavy,partly cloudy,medium
+cold,calm,heavy,partly cloudy,high
+cold,calm,heavy,partly cloudy,full
+cold,calm,heavy,overcast,none
+cold,calm,heavy,overcast,low
+cold,calm,heavy,overcast,medium
+cold,calm,heavy,overcast,high
+cold,calm,heavy,overcast,full
+cold,light,none,clear,none
+cold,light,none,clear,low
+cold,light,none,clear,medium
+cold,light,none,clear,high
+cold,light,none,clear,full
+cold,light,none,partly cloudy,none
+cold,light,none,partly cloudy,low
+cold,light,none,partly cloudy,medium
+cold,light,none,partly cloudy,high
+cold,light,none,partly cloudy,full
+cold,light,none,overcast,none
+cold,light,none,overcast,low
+cold,light,none,overcast,medium
+cold,light,none,overcast,high
+cold,light,none,overcast,full
+cold,light,light,clear,none
+cold,light,light,clear,low
+cold,light,light,clear,medium
+cold,light,light,clear,high
+cold,light,light,clear,full
+cold,light,light,partly cloudy,none
+cold,light,light,partly cloudy,low
+cold,light,light,partly cloudy,medium
+cold,light,light,partly cloudy,high
+cold,light,light,partly cloudy,full
+cold,light,light,overcast,none
+cold,light,light,overcast,low
+cold,light,light,overcast,medium
+cold,light,light,overcast,high
+cold,light,light,overcast,full
+cold,light,moderate,clear,none
+cold,light,moderate,clear,low
+cold,light,moderate,clear,medium
+cold,light,moderate,clear,high
+cold,light,moderate,clear,full
+cold,light,moderate,partly cloudy,none
+cold,light,moderate,partly cloudy,low
+cold,light,moderate,partly cloudy,medium
+cold,light,moderate,partly cloudy,high
+cold,light,moderate,partly cloudy,full
+cold,light,moderate,overcast,none
+cold,light,moderate,overcast,low
+cold,light,moderate,overcast,medium
+cold,light,moderate,overcast,high
+cold,light,moderate,overcast,full
+cold,light,heavy,clear,none
+cold,light,heavy,clear,low
+cold,light,heavy,clear,medium
+cold,light,heavy,clear,high
+cold,light,heavy,clear,full
+cold,light,heavy,partly cloudy,none
+cold,light,heavy,partly cloudy,low
+cold,light,heavy,partly cloudy,medium
+cold,light,heavy,partly cloudy,high
+cold,light,heavy,partly cloudy,full
+cold,light,heavy,overcast,none
+cold,light,heavy,overcast,low
+cold,light,heavy,overcast,medium
+cold,light,heavy,overcast,high
+cold,light,heavy,overcast,full
+cold,moderate,none,clear,none
+cold,moderate,none,clear,low
+cold,moderate,none,clear,medium
+cold,moderate,none,clear,high
+cold,moderate,none,clear,full
+cold,moderate,none,partly cloudy,none
+cold,moderate,none,partly cloudy,low
+cold,moderate,none,partly cloudy,medium
+cold,moderate,none,partly cloudy,high
+cold,moderate,none,partly cloudy,full
+cold,moderate,none,overcast,none
+cold,moderate,none,overcast,low
+cold,moderate,none,overcast,medium
+cold,moderate,none,overcast,high
+cold,moderate,none,overcast,full
+cold,moderate,light,clear,none
+cold,moderate,light,clear,low
+cold,moderate,light,clear,medium
+cold,moderate,light,clear,high
+cold,moderate,light,clear,full
+cold,moderate,light,partly cloudy,none
+cold,moderate,light,partly cloudy,low
+cold,moderate,light,partly cloudy,medium
+cold,moderate,light,partly cloudy,high
+cold,moderate,light,partly cloudy,full
+cold,moderate,light,overcast,none
+cold,moderate,light,overcast,low
+cold,moderate,light,overcast,medium
+cold,moderate,light,overcast,high
+cold,moderate,light,overcast,full
+cold,moderate,moderate,clear,none
+cold,moderate,moderate,clear,low
+cold,moderate,moderate,clear,medium
+cold,moderate,moderate,clear,high
+cold,moderate,moderate,clear,full
+cold,moderate,moderate,partly cloudy,none
+cold,moderate,moderate,partly cloudy,low
+cold,moderate,moderate,partly cloudy,medium
+cold,moderate,moderate,partly cloudy,high
+cold,moderate,moderate,partly cloudy,full
+cold,moderate,moderate,overcast,none
+cold,moderate,moderate,overcast,low
+cold,moderate,moderate,overcast,medium
+cold,moderate,moderate,overcast,high
+cold,moderate,moderate,overcast,full
+cold,moderate,heavy,clear,none
+cold,moderate,heavy,clear,low
+cold,moderate,heavy,clear,medium
+cold,moderate,heavy,clear,high
+cold,moderate,heavy,clear,full
+cold,moderate,heavy,partly cloudy,none
+cold,moderate,heavy,partly cloudy,low
+cold,moderate,heavy,partly cloudy,medium
+cold,moderate,heavy,partly cloudy,high
+cold,moderate,heavy,partly cloudy,full
+cold,moderate,heavy,overcast,none
+cold,moderate,heavy,overcast,low
+cold,moderate,heavy,overcast,medium
+cold,moderate,heavy,overcast,high
+cold,moderate,heavy,overcast,full
+cold,strong,none,clear,none
+cold,strong,none,clear,low
+cold,strong,none,clear,medium
+cold,strong,none,clear,high
+cold,strong,none,clear,full
+cold,strong,none,partly cloudy,none
+cold,strong,none,partly cloudy,low
+cold,strong,none,partly cloudy,medium
+cold,strong,none,partly cloudy,high
+cold,strong,none,partly cloudy,full
+cold,strong,none,overcast,none
+cold,strong,none,overcast,low
+cold,strong,none,overcast,medium
+cold,strong,none,overcast,high
+cold,strong,none,overcast,full
+cold,strong,light,clear,none
+cold,strong,light,clear,low
+cold,strong,light,clear,medium
+cold,strong,light,clear,high
+cold,strong,light,clear,full
+cold,strong,light,partly cloudy,none
+cold,strong,light,partly cloudy,low
+cold,strong,light,partly cloudy,medium
+cold,strong,light,partly cloudy,high
+cold,strong,light,partly cloudy,full
+cold,strong,light,overcast,none
+cold,strong,light,overcast,low
+cold,strong,light,overcast,medium
+cold,strong,light,overcast,high
+cold,strong,light,overcast,full
+cold,strong,moderate,clear,none
+cold,strong,moderate,clear,low
+cold,strong,moderate,clear,medium
+cold,strong,moderate,clear,high
+cold,strong,moderate,clear,full
+cold,strong,moderate,partly cloudy,none
+cold,strong,moderate,partly cloudy,low
+cold,strong,moderate,partly cloudy,medium
+cold,strong,moderate,partly cloudy,high
+cold,strong,moderate,partly cloudy,full
+cold,strong,moderate,overcast,none
+cold,strong,moderate,overcast,low
+cold,strong,moderate,overcast,medium
+cold,strong,moderate,overcast,high
+cold,strong,moderate,overcast,full
+cold,strong,heavy,clear,none
+cold,strong,heavy,clear,low
+cold,strong,heavy,clear,medium
+cold,strong,heavy,clear,high
+cold,strong,heavy,clear,full
+cold,strong,heavy,partly cloudy,none
+cold,strong,heavy,partly cloudy,low
+cold,strong,heavy,partly cloudy,medium
+cold,strong,heavy,partly cloudy,high
+cold,strong,heavy,partly cloudy,full
+cold,strong,heavy,overcast,none
+cold,strong,heavy,overcast,low
+cold,strong,heavy,overcast,medium
+cold,strong,heavy,overcast,high
+cold,strong,heavy,overcast,full
+moderate,calm,none,clear,none
+moderate,calm,none,clear,low
+moderate,calm,none,clear,medium
+moderate,calm,none,clear,high
+moderate,calm,none,clear,full
+moderate,calm,none,partly cloudy,none
+moderate,calm,none,partly cloudy,low
+moderate,calm,none,partly cloudy,medium
+moderate,calm,none,partly cloudy,high
+moderate,calm,none,partly cloudy,full
+moderate,calm,none,overcast,none
+moderate,calm,none,overcast,low
+moderate,calm,none,overcast,medium
+moderate,calm,none,overcast,high
+moderate,calm,none,overcast,full
+moderate,calm,light,clear,none
+moderate,calm,light,clear,low
+moderate,calm,light,clear,medium
+moderate,calm,light,clear,high
+moderate,calm,light,clear,full
+moderate,calm,light,partly cloudy,none
+moderate,calm,light,partly cloudy,low
+moderate,calm,light,partly cloudy,medium
+moderate,calm,light,partly cloudy,high
+moderate,calm,light,partly cloudy,full
+moderate,calm,light,overcast,none
+moderate,calm,light,overcast,low
+moderate,calm,light,overcast,medium
+moderate,calm,light,overcast,high
+moderate,calm,light,overcast,full
+moderate,calm,moderate,clear,none
+moderate,calm,moderate,clear,low
+moderate,calm,moderate,clear,medium
+moderate,calm,moderate,clear,high
+moderate,calm,moderate,clear,full
+moderate,calm,moderate,partly cloudy,none
+moderate,calm,moderate,partly cloudy,low
+moderate,calm,moderate,partly cloudy,medium
+moderate,calm,moderate,partly cloudy,high
+moderate,calm,moderate,partly cloudy,full
+moderate,calm,moderate,overcast,none
+moderate,calm,moderate,overcast,low
+moderate,calm,moderate,overcast,medium
+moderate,calm,moderate,overcast,high
+moderate,calm,moderate,overcast,full
+moderate,calm,heavy,clear,none
+moderate,calm,heavy,clear,low
+moderate,calm,heavy,clear,medium
+moderate,calm,heavy,clear,high
+moderate,calm,heavy,clear,full
+moderate,calm,heavy,partly cloudy,none
+moderate,calm,heavy,partly cloudy,low
+moderate,calm,heavy,partly cloudy,medium
+moderate,calm,heavy,partly cloudy,high
+moderate,calm,heavy,partly cloudy,full
+moderate,calm,heavy,overcast,none
+moderate,calm,heavy,overcast,low
+moderate,calm,heavy,overcast,medium
+moderate,calm,heavy,overcast,high
+moderate,calm,heavy,overcast,full
+moderate,light,none,clear,none
+moderate,light,none,clear,low
+moderate,light,none,clear,medium
+moderate,light,none,clear,high
+moderate,light,none,clear,full
+moderate,light,none,partly cloudy,none
+moderate,light,none,partly cloudy,low
+moderate,light,none,partly cloudy,medium
+moderate,light,none,partly cloudy,high
+moderate,light,none,partly cloudy,full
+moderate,light,none,overcast,none
+moderate,light,none,overcast,low
+moderate,light,none,overcast,medium
+moderate,light,none,overcast,high
+moderate,light,none,overcast,full
+moderate,light,light,clear,none
+moderate,light,light,clear,low
+moderate,light,light,clear,medium
+moderate,light,light,clear,high
+moderate,light,light,clear,full
+moderate,light,light,partly cloudy,none
+moderate,light,light,partly cloudy,low
+moderate,light,light,partly cloudy,medium
+moderate,light,light,partly cloudy,high
+moderate,light,light,partly cloudy,full
+moderate,light,light,overcast,none
+moderate,light,light,overcast,low
+moderate,light,light,overcast,medium
+moderate,light,light,overcast,high
+moderate,light,light,overcast,full
+moderate,light,moderate,clear,none
+moderate,light,moderate,clear,low
+moderate,light,moderate,clear,medium
+moderate,light,moderate,clear,high
+moderate,light,moderate,clear,full
+moderate,light,moderate,partly cloudy,none
+moderate,light,moderate,partly cloudy,low
+moderate,light,moderate,partly cloudy,medium
+moderate,light,moderate,partly cloudy,high
+moderate,light,moderate,partly cloudy,full
+moderate,light,moderate,overcast,none
+moderate,light,moderate,overcast,low
+moderate,light,moderate,overcast,medium
+moderate,light,moderate,overcast,high
+moderate,light,moderate,overcast,full
+moderate,light,heavy,clear,none
+moderate,light,heavy,clear,low
+moderate,light,heavy,clear,medium
+moderate,light,heavy,clear,high
+moderate,light,heavy,clear,full
+moderate,light,heavy,partly cloudy,none
+moderate,light,heavy,partly cloudy,low
+moderate,light,heavy,partly cloudy,medium
+moderate,light,heavy,partly cloudy,high
+moderate,light,heavy,partly cloudy,full
+moderate,light,heavy,overcast,none
+moderate,light,heavy,overcast,low
+moderate,light,heavy,overcast,medium
+moderate,light,heavy,overcast,high
+moderate,light,heavy,overcast,full
+moderate,moderate,none,clear,none
+moderate,moderate,none,clear,low
+moderate,moderate,none,clear,medium
+moderate,moderate,none,clear,high
+moderate,moderate,none,clear,full
+moderate,moderate,none,partly cloudy,none
+moderate,moderate,none,partly cloudy,low
+moderate,moderate,none,partly cloudy,medium
+moderate,moderate,none,partly cloudy,high
+moderate,moderate,none,partly cloudy,full
+moderate,moderate,none,overcast,none
+moderate,moderate,none,overcast,low
+moderate,moderate,none,overcast,medium
+moderate,moderate,none,overcast,high
+moderate,moderate,none,overcast,full
+moderate,moderate,light,clear,none
+moderate,moderate,light,clear,low
+moderate,moderate,light,clear,medium
+moderate,moderate,light,clear,high
+moderate,moderate,light,clear,full
+moderate,moderate,light,partly cloudy,none
+moderate,moderate,light,partly cloudy,low
+moderate,moderate,light,partly cloudy,medium
+moderate,moderate,light,partly cloudy,high
+moderate,moderate,light,partly cloudy,full
+moderate,moderate,light,overcast,none
+moderate,moderate,light,overcast,low
+moderate,moderate,light,overcast,medium
+moderate,moderate,light,overcast,high
+moderate,moderate,light,overcast,full
+moderate,moderate,moderate,clear,none
+moderate,moderate,moderate,clear,low
+moderate,moderate,moderate,clear,medium
+moderate,moderate,moderate,clear,high
+moderate,moderate,moderate,clear,full
+moderate,moderate,moderate,partly cloudy,none
+moderate,moderate,moderate,partly cloudy,low
+moderate,moderate,moderate,partly cloudy,medium
+moderate,moderate,moderate,partly cloudy,high
+moderate,moderate,moderate,partly cloudy,full
+moderate,moderate,moderate,overcast,none
+moderate,moderate,moderate,overcast,low
+moderate,moderate,moderate,overcast,medium
+moderate,moderate,moderate,overcast,high
+moderate,moderate,moderate,overcast,full
+moderate,moderate,heavy,clear,none
+moderate,moderate,heavy,clear,low
+moderate,moderate,heavy,clear,medium
+moderate,moderate,heavy,clear,high
+moderate,moderate,heavy,clear,full
+moderate,moderate,heavy,partly cloudy,none
+moderate,moderate,heavy,partly cloudy,low
+moderate,moderate,heavy,partly cloudy,medium
+moderate,moderate,heavy,partly cloudy,high
+moderate,moderate,heavy,partly cloudy,full
+moderate,moderate,heavy,overcast,none
+moderate,moderate,heavy,overcast,low
+moderate,moderate,heavy,overcast,medium
+moderate,moderate,heavy,overcast,high
+moderate,moderate,heavy,overcast,full
+moderate,strong,none,clear,none
+moderate,strong,none,clear,low
+moderate,strong,none,clear,medium
+moderate,strong,none,clear,high
+moderate,strong,none,clear,full
+moderate,strong,none,partly cloudy,none
+moderate,strong,none,partly cloudy,low
+moderate,strong,none,partly cloudy,medium
+moderate,strong,none,partly cloudy,high
+moderate,strong,none,partly cloudy,full
+moderate,strong,none,overcast,none
+moderate,strong,none,overcast,low
+moderate,strong,none,overcast,medium
+moderate,strong,none,overcast,high
+moderate,strong,none,overcast,full
+moderate,strong,light,clear,none
+moderate,strong,light,clear,low
+moderate,strong,light,clear,medium
+moderate,strong,light,clear,high
+moderate,strong,light,clear,full
+moderate,strong,light,partly cloudy,none
+moderate,strong,light,partly cloudy,low
+moderate,strong,light,partly cloudy,medium
+moderate,strong,light,partly cloudy,high
+moderate,strong,light,partly cloudy,full
+moderate,strong,light,overcast,none
+moderate,strong,light,overcast,low
+moderate,strong,light,overcast,medium
+moderate,strong,light,overcast,high
+moderate,strong,light,overcast,full
+moderate,strong,moderate,clear,none
+moderate,strong,moderate,clear,low
+moderate,strong,moderate,clear,medium
+moderate,strong,moderate,clear,high
+moderate,strong,moderate,clear,full
+moderate,strong,moderate,partly cloudy,none
+moderate,strong,moderate,partly cloudy,low
+moderate,strong,moderate,partly cloudy,medium
+moderate,strong,moderate,partly cloudy,high
+moderate,strong,moderate,partly cloudy,full
+moderate,strong,moderate,overcast,none
+moderate,strong,moderate,overcast,low
+moderate,strong,moderate,overcast,medium
+moderate,strong,moderate,overcast,high
+moderate,strong,moderate,overcast,full
+moderate,strong,heavy,clear,none
+moderate,strong,heavy,clear,low
+moderate,strong,heavy,clear,medium
+moderate,strong,heavy,clear,high
+moderate,strong,heavy,clear,full
+moderate,strong,heavy,partly cloudy,none
+moderate,strong,heavy,partly cloudy,low
+moderate,strong,heavy,partly cloudy,medium
+moderate,strong,heavy,partly cloudy,high
+moderate,strong,heavy,partly cloudy,full
+moderate,strong,heavy,overcast,none
+moderate,strong,heavy,overcast,low
+moderate,strong,heavy,overcast,medium
+moderate,strong,heavy,overcast,high
+moderate,strong,heavy,overcast,full
+warm,calm,none,clear,none
+warm,calm,none,clear,low
+warm,calm,none,clear,medium
+warm,calm,none,clear,high
+warm,calm,none,clear,full
+warm,calm,none,partly cloudy,none
+warm,calm,none,partly cloudy,low
+warm,calm,none,partly cloudy,medium
+warm,calm,none,partly cloudy,high
+warm,calm,none,partly cloudy,full
+warm,calm,none,overcast,none
+warm,calm,none,overcast,low
+warm,calm,none,overcast,medium
+warm,calm,none,overcast,high
+warm,calm,none,overcast,full
+warm,calm,light,clear,none
+warm,calm,light,clear,low
+warm,calm,light,clear,medium
+warm,calm,light,clear,high
+warm,calm,light,clear,full
+warm,calm,light,partly cloudy,none
+warm,calm,light,partly cloudy,low
+warm,calm,light,partly cloudy,medium
+warm,calm,light,partly cloudy,high
+warm,calm,light,partly cloudy,full
+warm,calm,light,overcast,none
+warm,calm,light,overcast,low
+warm,calm,light,overcast,medium
+warm,calm,light,overcast,high
+warm,calm,light,overcast,full
+warm,calm,moderate,clear,none
+warm,calm,moderate,clear,low
+warm,calm,moderate,clear,medium
+warm,calm,moderate,clear,high
+warm,calm,moderate,clear,full
+warm,calm,moderate,partly cloudy,none
+warm,calm,moderate,partly cloudy,low
+warm,calm,moderate,partly cloudy,medium
+warm,calm,moderate,partly cloudy,high
+warm,calm,moderate,partly cloudy,full
+warm,calm,moderate,overcast,none
+warm,calm,moderate,overcast,low
+warm,calm,moderate,overcast,medium
+warm,calm,moderate,overcast,high
+warm,calm,moderate,overcast,full
+warm,calm,heavy,clear,none
+warm,calm,heavy,clear,low
+warm,calm,heavy,clear,medium
+warm,calm,heavy,clear,high
+warm,calm,heavy,clear,full
+warm,calm,heavy,partly cloudy,none
+warm,calm,heavy,partly cloudy,low
+warm,calm,heavy,partly cloudy,medium
+warm,calm,heavy,partly cloudy,high
+warm,calm,heavy,partly cloudy,full
+warm,calm,heavy,overcast,none
+warm,calm,heavy,overcast,low
+warm,calm,heavy,overcast,medium
+warm,calm,heavy,overcast,high
+warm,calm,heavy,overcast,full
+warm,light,none,clear,none
+warm,light,none,clear,low
+warm,light,none,clear,medium
+warm,light,none,clear,high
+warm,light,none,clear,full
+warm,light,none,partly cloudy,none
+warm,light,none,partly cloudy,low
+warm,light,none,partly cloudy,medium
+warm,light,none,partly cloudy,high
+warm,light,none,partly cloudy,full
+warm,light,none,overcast,none
+warm,light,none,overcast,low
+warm,light,none,overcast,medium
+warm,light,none,overcast,high
+warm,light,none,overcast,full
+warm,light,light,clear,none
+warm,light,light,clear,low
+warm,light,light,clear,medium
+warm,light,light,clear,high
+warm,light,light,clear,full
+warm,light,light,partly cloudy,none
+warm,light,light,partly cloudy,low
+warm,light,light,partly cloudy,medium
+warm,light,light,partly cloudy,high
+warm,light,light,partly cloudy,full
+warm,light,light,overcast,none
+warm,light,light,overcast,low
+warm,light,light,overcast,medium
+warm,light,light,overcast,high
+warm,light,light,overcast,full
+warm,light,moderate,clear,none
+warm,light,moderate,clear,low
+warm,light,moderate,clear,medium
+warm,light,moderate,clear,high
+warm,light,moderate,clear,full
+warm,light,moderate,partly cloudy,none
+warm,light,moderate,partly cloudy,low
+warm,light,moderate,partly cloudy,medium
+warm,light,moderate,partly cloudy,high
+warm,light,moderate,partly cloudy,full
+warm,light,moderate,overcast,none
+warm,light,moderate,overcast,low
+warm,light,moderate,overcast,medium
+warm,light,moderate,overcast,high
+warm,light,moderate,overcast,full
+warm,light,heavy,clear,none
+warm,light,heavy,clear,low
+warm,light,heavy,clear,medium
+warm,light,heavy,clear,high
+warm,light,heavy,clear,full
+warm,light,heavy,partly cloudy,none
+warm,light,heavy,partly cloudy,low
+warm,light,heavy,partly cloudy,medium
+warm,light,heavy,partly cloudy,high
+warm,light,heavy,partly cloudy,full
+warm,light,heavy,overcast,none
+warm,light,heavy,overcast,low
+warm,light,heavy,overcast,medium
+warm,light,heavy,overcast,high
+warm,light,heavy,overcast,full
+warm,moderate,none,clear,none
+warm,moderate,none,clear,low
+warm,moderate,none,clear,medium
+warm,moderate,none,clear,high
+warm,moderate,none,clear,full
+warm,moderate,none,partly cloudy,none
+warm,moderate,none,partly cloudy,low
+warm,moderate,none,partly cloudy,medium
+warm,moderate,none,partly cloudy,high
+warm,moderate,none,partly cloudy,full
+warm,moderate,none,overcast,none
+warm,moderate,none,overcast,low
+warm,moderate,none,overcast,medium
+warm,moderate,none,overcast,high
+warm,moderate,none,overcast,full
+warm,moderate,light,clear,none
+warm,moderate,light,clear,low
+warm,moderate,light,clear,medium
+warm,moderate,light,clear,high
+warm,moderate,light,clear,full
+warm,moderate,light,partly cloudy,none
+warm,moderate,light,partly cloudy,low
+warm,moderate,light,partly cloudy,medium
+warm,moderate,light,partly cloudy,high
+warm,moderate,light,partly cloudy,full
+warm,moderate,light,overcast,none
+warm,moderate,light,overcast,low
+warm,moderate,light,overcast,medium
+warm,moderate,light,overcast,high
+warm,moderate,light,overcast,full
+warm,moderate,moderate,clear,none
+warm,moderate,moderate,clear,low
+warm,moderate,moderate,clear,medium
+warm,moderate,moderate,clear,high
+warm,moderate,moderate,clear,full
+warm,moderate,moderate,partly cloudy,none
+warm,moderate,moderate,partly cloudy,low
+warm,moderate,moderate,partly cloudy,medium
+warm,moderate,moderate,partly cloudy,high
+warm,moderate,moderate,partly cloudy,full
+warm,moderate,moderate,overcast,none
+warm,moderate,moderate,overcast,low
+warm,moderate,moderate,overcast,medium
+warm,moderate,moderate,overcast,high
+warm,moderate,moderate,overcast,full
+warm,moderate,heavy,clear,none
+warm,moderate,heavy,clear,low
+warm,moderate,heavy,clear,medium
+warm,moderate,heavy,clear,high
+warm,moderate,heavy,clear,full
+warm,moderate,heavy,partly cloudy,none
+warm,moderate,heavy,partly cloudy,low
+warm,moderate,heavy,partly cloudy,medium
+warm,moderate,heavy,partly cloudy,high
+warm,moderate,heavy,partly cloudy,full
+warm,moderate,heavy,overcast,none
+warm,moderate,heavy,overcast,low
+warm,moderate,heavy,overcast,medium
+warm,moderate,heavy,overcast,high
+warm,moderate,heavy,overcast,full
+warm,strong,none,clear,none
+warm,strong,none,clear,low
+warm,strong,none,clear,medium
+warm,strong,none,clear,high
+warm,strong,none,clear,full
+warm,strong,none,partly cloudy,none
+warm,strong,none,partly cloudy,low
+warm,strong,none,partly cloudy,medium
+warm,strong,none,partly cloudy,high
+warm,strong,none,partly cloudy,full
+warm,strong,none,overcast,none
+warm,strong,none,overcast,low
+warm,strong,none,overcast,medium
+warm,strong,none,overcast,high
+warm,strong,none,overcast,full
+warm,strong,light,clear,none
+warm,strong,light,clear,low
+warm,strong,light,clear,medium
+warm,strong,light,clear,high
+warm,strong,light,clear,full
+warm,strong,light,partly cloudy,none
+warm,strong,light,partly cloudy,low
+warm,strong,light,partly cloudy,medium
+warm,strong,light,partly cloudy,high
+warm,strong,light,partly cloudy,full
+warm,strong,light,overcast,none
+warm,strong,light,overcast,low
+warm,strong,light,overcast,medium
+warm,strong,light,overcast,high
+warm,strong,light,overcast,full
+warm,strong,moderate,clear,none
+warm,strong,moderate,clear,low
+warm,strong,moderate,clear,medium
+warm,strong,moderate,clear,high
+warm,strong,moderate,clear,full
+warm,strong,moderate,partly cloudy,none
+warm,strong,moderate,partly cloudy,low
+warm,strong,moderate,partly cloudy,medium
+warm,strong,moderate,partly cloudy,high
+warm,strong,moderate,partly cloudy,full
+warm,strong,moderate,overcast,none
+warm,strong,moderate,overcast,low
+warm,strong,moderate,overcast,medium
+warm,strong,moderate,overcast,high
+warm,strong,moderate,overcast,full
+warm,strong,heavy,clear,none
+warm,strong,heavy,clear,low
+warm,strong,heavy,clear,medium
+warm,strong,heavy,clear,high
+warm,strong,heavy,clear,full
+warm,strong,heavy,partly cloudy,none
+warm,strong,heavy,partly cloudy,low
+warm,strong,heavy,partly cloudy,medium
+warm,strong,heavy,partly cloudy,high
+warm,strong,heavy,partly cloudy,full
+warm,strong,heavy,overcast,none
+warm,strong,heavy,overcast,low
+warm,strong,heavy,overcast,medium
+warm,strong,heavy,overcast,high
+warm,strong,heavy,overcast,full
+hot,calm,none,clear,none
+hot,calm,none,clear,low
+hot,calm,none,clear,medium
+hot,calm,none,clear,high
+hot,calm,none,clear,full
+hot,calm,none,partly cloudy,none
+hot,calm,none,partly cloudy,low
+hot,calm,none,partly cloudy,medium
+hot,calm,none,partly cloudy,high
+hot,calm,none,partly cloudy,full
+hot,calm,none,overcast,none
+hot,calm,none,overcast,low
+hot,calm,none,overcast,medium
+hot,calm,none,overcast,high
+hot,calm,none,overcast,full
+hot,calm,light,clear,none
+hot,calm,light,clear,low
+hot,calm,light,clear,medium
+hot,calm,light,clear,high
+hot,calm,light,clear,full
+hot,calm,light,partly cloudy,none
+hot,calm,light,partly cloudy,low
+hot,calm,light,partly cloudy,medium
+hot,calm,light,partly cloudy,high
+hot,calm,light,partly cloudy,full
+hot,calm,light,overcast,none
+hot,calm,light,overcast,low
+hot,calm,light,overcast,medium
+hot,calm,light,overcast,high
+hot,calm,light,overcast,full
+hot,calm,moderate,clear,none
+hot,calm,moderate,clear,low
+hot,calm,moderate,clear,medium
+hot,calm,moderate,clear,high
+hot,calm,moderate,clear,full
+hot,calm,moderate,partly cloudy,none
+hot,calm,moderate,partly cloudy,low
+hot,calm,moderate,partly cloudy,medium
+hot,calm,moderate,partly cloudy,high
+hot,calm,moderate,partly cloudy,full
+hot,calm,moderate,overcast,none
+hot,calm,moderate,overcast,low
+hot,calm,moderate,overcast,medium
+hot,calm,moderate,overcast,high
+hot,calm,moderate,overcast,full
+hot,calm,heavy,clear,none
+hot,calm,heavy,clear,low
+hot,calm,heavy,clear,medium
+hot,calm,heavy,clear,high
+hot,calm,heavy,clear,full
+hot,calm,heavy,partly cloudy,none
+hot,calm,heavy,partly cloudy,low
+hot,calm,heavy,partly cloudy,medium
+hot,calm,heavy,partly cloudy,high
+hot,calm,heavy,partly cloudy,full
+hot,calm,heavy,overcast,none
+hot,calm,heavy,overcast,low
+hot,calm,heavy,overcast,medium
+hot,calm,heavy,overcast,high
+hot,calm,heavy,overcast,full
+hot,light,none,clear,none
+hot,light,none,clear,low
+hot,light,none,clear,medium
+hot,light,none,clear,high
+hot,light,none,clear,full
+hot,light,none,partly cloudy,none
+hot,light,none,partly cloudy,low
+hot,light,none,partly cloudy,medium
+hot,light,none,partly cloudy,high
+hot,light,none,partly cloudy,full
+hot,light,none,overcast,none
+hot,light,none,overcast,low
+hot,light,none,overcast,medium
+hot,light,none,overcast,high
+hot,light,none,overcast,full
+hot,light,light,clear,none
+hot,light,light,clear,low
+hot,light,light,clear,medium
+hot,light,light,clear,high
+hot,light,light,clear,full
+hot,light,light,partly cloudy,none
+hot,light,light,partly cloudy,low
+hot,light,light,partly cloudy,medium
+hot,light,light,partly cloudy,high
+hot,light,light,partly cloudy,full
+hot,light,light,overcast,none
+hot,light,light,overcast,low
+hot,light,light,overcast,medium
+hot,light,light,overcast,high
+hot,light,light,overcast,full
+hot,light,moderate,clear,none
+hot,light,moderate,clear,low
+hot,light,moderate,clear,medium
+hot,light,moderate,clear,high
+hot,light,moderate,clear,full
+hot,light,moderate,partly cloudy,none
+hot,light,moderate,partly cloudy,low
+hot,light,moderate,partly cloudy,medium
+hot,light,moderate,partly cloudy,high
+hot,light,moderate,partly cloudy,full
+hot,light,moderate,overcast,none
+hot,light,moderate,overcast,low
+hot,light,moderate,overcast,medium
+hot,light,moderate,overcast,high
+hot,light,moderate,overcast,full
+hot,light,heavy,clear,none
+hot,light,heavy,clear,low
+hot,light,heavy,clear,medium
+hot,light,heavy,clear,high
+hot,light,heavy,clear,full
+hot,light,heavy,partly cloudy,none
+hot,light,heavy,partly cloudy,low
+hot,light,heavy,partly cloudy,medium
+hot,light,heavy,partly cloudy,high
+hot,light,heavy,partly cloudy,full
+hot,light,heavy,overcast,none
+hot,light,heavy,overcast,low
+hot,light,heavy,overcast,medium
+hot,light,heavy,overcast,high
+hot,light,heavy,overcast,full
+hot,moderate,none,clear,none
+hot,moderate,none,clear,low
+hot,moderate,none,clear,medium
+hot,moderate,none,clear,high
+hot,moderate,none,clear,full
+hot,moderate,none,partly cloudy,none
+hot,moderate,none,partly cloudy,low
+hot,moderate,none,partly cloudy,medium
+hot,moderate,none,partly cloudy,high
+hot,moderate,none,partly cloudy,full
+hot,moderate,none,overcast,none
+hot,moderate,none,overcast,low
+hot,moderate,none,overcast,medium
+hot,moderate,none,overcast,high
+hot,moderate,none,overcast,full
+hot,moderate,light,clear,none
+hot,moderate,light,clear,low
+hot,moderate,light,clear,medium
+hot,moderate,light,clear,high
+hot,moderate,light,clear,full
+hot,moderate,light,partly cloudy,none
+hot,moderate,light,partly cloudy,low
+hot,moderate,light,partly cloudy,medium
+hot,moderate,light,partly cloudy,high
+hot,moderate,light,partly cloudy,full
+hot,moderate,light,overcast,none
+hot,moderate,light,overcast,low
+hot,moderate,light,overcast,medium
+hot,moderate,light,overcast,high
+hot,moderate,light,overcast,full
+hot,moderate,moderate,clear,none
+hot,moderate,moderate,clear,low
+hot,moderate,moderate,clear,medium
+hot,moderate,moderate,clear,high
+hot,moderate,moderate,clear,full
+hot,moderate,moderate,partly cloudy,none
+hot,moderate,moderate,partly cloudy,low
+hot,moderate,moderate,partly cloudy,medium
+hot,moderate,moderate,partly cloudy,high
+hot,moderate,moderate,partly cloudy,full
+hot,moderate,moderate,overcast,none
+hot,moderate,moderate,overcast,low
+hot,moderate,moderate,overcast,medium
+hot,moderate,moderate,overcast,high
+hot,moderate,moderate,overcast,full
+hot,moderate,heavy,clear,none
+hot,moderate,heavy,clear,low
+hot,moderate,heavy,clear,medium
+hot,moderate,heavy,clear,high
+hot,moderate,heavy,clear,full
+hot,moderate,heavy,partly cloudy,none
+hot,moderate,heavy,partly cloudy,low
+hot,moderate,heavy,partly cloudy,medium
+hot,moderate,heavy,partly cloudy,high
+hot,moderate,heavy,partly cloudy,full
+hot,moderate,heavy,overcast,none
+hot,moderate,heavy,overcast,low
+hot,moderate,heavy,overcast,medium
+hot,moderate,heavy,overcast,high
+hot,moderate,heavy,overcast,full
+hot,strong,none,clear,none
+hot,strong,none,clear,low
+hot,strong,none,clear,medium
+hot,strong,none,clear,high
+hot,strong,none,clear,full
+hot,strong,none,partly cloudy,none
+hot,strong,none,partly cloudy,low
+hot,strong,none,partly cloudy,medium
+hot,strong,none,partly cloudy,high
+hot,strong,none,partly cloudy,full
+hot,strong,none,overcast,none
+hot,strong,none,overcast,low
+hot,strong,none,overcast,medium
+hot,strong,none,overcast,high
+hot,strong,none,overcast,full
+hot,strong,light,clear,none
+hot,strong,light,clear,low
+hot,strong,light,clear,medium
+hot,strong,light,clear,high
+hot,strong,light,clear,full
+hot,strong,light,partly cloudy,none
+hot,strong,light,partly cloudy,low
+hot,strong,light,partly cloudy,medium
+hot,strong,light,partly cloudy,high
+hot,strong,light,partly cloudy,full
+hot,strong,light,overcast,none
+hot,strong,light,overcast,low
+hot,strong,light,overcast,medium
+hot,strong,light,overcast,high
+hot,strong,light,overcast,full
+hot,strong,moderate,clear,none
+hot,strong,moderate,clear,low
+hot,strong,moderate,clear,medium
+hot,strong,moderate,clear,high
+hot,strong,moderate,clear,full
+hot,strong,moderate,partly cloudy,none
+hot,strong,moderate,partly cloudy,low
+hot,strong,moderate,partly cloudy,medium
+hot,strong,moderate,partly cloudy,high
+hot,strong,moderate,partly cloudy,full
+hot,strong,moderate,overcast,none
+hot,strong,moderate,overcast,low
+hot,strong,moderate,overcast,medium
+hot,strong,moderate,overcast,high
+hot,strong,moderate,overcast,full
+hot,strong,heavy,clear,none
+hot,strong,heavy,clear,low
+hot,strong,heavy,clear,medium
+hot,strong,heavy,clear,high
+hot,strong,heavy,clear,full
+hot,strong,heavy,partly cloudy,none
+hot,strong,heavy,partly cloudy,low
+hot,strong,heavy,partly cloudy,medium
+hot,strong,heavy,partly cloudy,high
+hot,strong,heavy,partly cloudy,full
+hot,strong,heavy,overcast,none
+hot,strong,heavy,overcast,low
+hot,strong,heavy,overcast,medium
+hot,strong,heavy,overcast,high
+hot,strong,heavy,overcast,full

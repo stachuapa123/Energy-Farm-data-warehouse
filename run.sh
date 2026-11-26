@@ -1,34 +1,24 @@
 #!/usr/bin/env bash
-# EcoVolt - runs the whole pipeline inside the SQL Server container with sqlcmd.
-# Place in the repository root (next to docker-compose.yml, .env, Data/, Schemas/, implementation/).
+# EcoVolt - optional helper that runs the SQL scripts with sqlcmd inside the SQL Server container,
+# in the same order as README.md (instead of running them one by one in an SQL client).
+# Run it from the project directory after: docker compose up -d
 #
-#   ./run.sh                    everything: sources -> without_partitions -> with_partitions -> comparison
+#   ./run.sh                    everything: without_partitions -> with_partitions -> comparison
 #   ./run.sh --reset            same, but first drops EcoVoltDW and EcoVoltDW_Part (fresh start)
-#   ./run.sh sources            only the source system (PowerMaster + weather staging)
-#   ./run.sh without            only implementation/without_partitions (01 ... 08)
-#   ./run.sh with               only implementation/with_partitions   (00 ... 08_0)
-#   ./run.sh compare            only implementation/09_compare_partitioned_vs_not.sql
+#   ./run.sh without            only dw_creation_scripts/without_partitions (01 ... 06)
+#   ./run.sh with               only dw_creation_scripts/with_partitions   (00 ... 06_0)
+#   ./run.sh compare            only dw_creation_scripts/compare_partitioned_vs_not.sql
+#   ./run.sh crosscheck         only queries/sql_crosscheck.sql (on EcoVoltDW)
+#   ./run.sh sources            the source system for the ETL stage (PowerMaster + weather staging)
 #   ./run.sh --reset without with compare     steps can be combined
-#
-# Requirements: the container is running (docker compose up -d) and mounts this folder at /sql
-# and the Data folder at /dw_data. The password is read from MSSQL_SA_PASSWORD in .env.
 set -euo pipefail
 cd "$(dirname "$0")"
 
-CONTAINER="${MSSQL_CONTAINER:-ecovolt-mssql}"
-SQL_ROOT_IN_CONTAINER="/sql"          # where this folder is mounted in the container
-IMPL="implementation"
-
-# ---------- settings from .env ----------
-if [ ! -f .env ]; then
-  echo "ERROR: .env not found in $(pwd)" >&2
-  exit 1
-fi
-set -a
-# shellcheck disable=SC1091
-. ./.env
-set +a
-: "${MSSQL_SA_PASSWORD:?MSSQL_SA_PASSWORD is not set in .env}"
+CONTAINER="${MSSQL_CONTAINER:-mssql-db}"
+# Must match MSSQL_SA_PASSWORD in docker-compose.yml.
+MSSQL_SA_PASSWORD="${MSSQL_SA_PASSWORD:-EcoVolt_Strong_Pass_2025}"
+SQL_ROOT_IN_CONTAINER="/sql"
+SCRIPTS="dw_creation_scripts"
 
 # ---------- arguments ----------
 RESET=false
@@ -36,16 +26,15 @@ STEPS=()
 for arg in "$@"; do
   case "$arg" in
     --reset) RESET=true ;;
-    sources|without|with|compare) STEPS+=("$arg") ;;
-    -h|--help) sed -n '2,15p' "$0"; exit 0 ;;
+    sources|without|with|compare|crosscheck) STEPS+=("$arg") ;;
+    -h|--help) sed -n '2,16p' "$0"; exit 0 ;;
     *) echo "Unknown argument: $arg (use --help)" >&2; exit 1 ;;
   esac
 done
-[ "${#STEPS[@]}" -eq 0 ] && STEPS=(sources without with compare)
+[ "${#STEPS[@]}" -eq 0 ] && STEPS=(without with compare)
 
 # ---------- helpers ----------
 sqlcmd_in_container() {
-  # -C trust certificate, -I QUOTED_IDENTIFIER ON (filtered indexes), -b stop on error, -W trim spaces
   docker exec -i "$CONTAINER" /opt/mssql-tools18/bin/sqlcmd -C -I -b -W \
     -S localhost -U sa -P "$MSSQL_SA_PASSWORD" "$@"
 }
@@ -54,7 +43,7 @@ run_file() {                      # $1 = path relative to this folder
   local rel="$1" start
   if ! docker exec "$CONTAINER" test -f "$SQL_ROOT_IN_CONTAINER/$rel"; then
     echo "ERROR: $rel is not visible in the container at $SQL_ROOT_IN_CONTAINER/$rel" >&2
-    echo "       Is this folder mounted at $SQL_ROOT_IN_CONTAINER (docker-compose.yml: - .:/sql:ro,z)?" >&2
+    echo "       Is this folder mounted at $SQL_ROOT_IN_CONTAINER (docker-compose.yml: - .:/sql:ro)?" >&2
     exit 1
   fi
   echo
@@ -64,9 +53,9 @@ run_file() {                      # $1 = path relative to this folder
   echo "------------------- $rel OK ($(( $(date +%s) - start )) s)"
 }
 
-find_one() {                      # $1 = file name anywhere in the repository (outside implementation/)
+find_one() {                      # $1 = file name in Schemas/ or Data/
   local matches=()
-  mapfile -t matches < <(find . -path "./$IMPL" -prune -o -path ./.git -prune -o -type f -name "$1" -print)
+  mapfile -t matches < <(find ./Schemas ./Data -type f -name "$1" -print)
   if [ "${#matches[@]}" -ne 1 ]; then
     echo "ERROR: expected exactly one file named $1, found ${#matches[@]}: ${matches[*]:-none}" >&2
     exit 1
@@ -95,16 +84,14 @@ if ! docker inspect "$CONTAINER" >/dev/null 2>&1; then
   echo "ERROR: container $CONTAINER not found - start it with: docker compose up -d" >&2
   exit 1
 fi
-echo -n "Waiting for $CONTAINER to be healthy"
+echo -n "Waiting for SQL Server in $CONTAINER"
 for _ in $(seq 1 60); do
-  status=$(docker inspect -f '{{if .State.Health}}{{.State.Health.Status}}{{else}}{{.State.Status}}{{end}}' "$CONTAINER")
-  if [ "$status" = "healthy" ] || [ "$status" = "running" ]; then echo " - $status"; break; fi
+  if sqlcmd_in_container -Q "SELECT 1" >/dev/null 2>&1; then echo " - ready"; break; fi
   echo -n "."; sleep 2
 done
-# The warehouse scripts (without / with) read the CSVs from the /dw_data mount.
 if [[ " ${STEPS[*]} " == *" without "* || " ${STEPS[*]} " == *" with "* ]]; then
-  docker exec "$CONTAINER" test -d /dw_data/T1/PowerMaster \
-    || { echo "ERROR: /dw_data/T1/PowerMaster is not visible in the container (check DATA_DIR and :z)" >&2; exit 1; }
+  docker exec "$CONTAINER" test -f /dw_data/bulk/EnergyProduction_2024.csv \
+    || { echo "ERROR: /dw_data/bulk is empty in the container - run: python Generator/export_bulk.py" >&2; exit 1; }
 fi
 
 # ---------- fresh start ----------
@@ -122,8 +109,6 @@ fi
 for step in "${STEPS[@]}"; do
   case "$step" in
     sources)
-      # The source scripts (Weather_linux_docker.sql, load_snapshot_docker_linux.sql) read the CSVs from
-      # /var/opt/mssql/import - a copy inside the container (the warehouse scripts use the /dw_data mount).
       echo
       echo "=================== copying Data/ to $CONTAINER:/var/opt/mssql/import ==================="
       [ -d Data ] || { echo "ERROR: Data/ not found in $(pwd)" >&2; exit 1; }
@@ -139,8 +124,8 @@ for step in "${STEPS[@]}"; do
         echo "ERROR: EcoVoltDW already exists - the scripts load into empty tables. Use ./run.sh --reset without" >&2
         exit 1
       fi
-      for p in 01 02 03 04_d 04_f 05 06 07 08; do
-        run_prefix "$IMPL/without_partitions" "$p"
+      for p in 01 02 03 04_d 04_f 05 06; do
+        run_prefix "$SCRIPTS/without_partitions" "$p"
       done
       ;;
     with)
@@ -148,12 +133,15 @@ for step in "${STEPS[@]}"; do
         echo "ERROR: EcoVoltDW_Part already exists - the scripts load into empty tables. Use ./run.sh --reset with" >&2
         exit 1
       fi
-      for p in 00 01_0_ 01_01 02 03 04_0_d 04_0_f 05 06 07 08; do
-        run_prefix "$IMPL/with_partitions" "$p"
+      for p in 00 01_0_ 01_01 02 03 04_0_d 04_0_f 05 06; do
+        run_prefix "$SCRIPTS/with_partitions" "$p"
       done
       ;;
     compare)
-      run_file "$IMPL/09_compare_partitioned_vs_not.sql"
+      run_file "$SCRIPTS/compare_partitioned_vs_not.sql"
+      ;;
+    crosscheck)
+      run_file "queries/sql_crosscheck.sql"
       ;;
   esac
 done
