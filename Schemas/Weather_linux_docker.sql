@@ -4,9 +4,9 @@
 
    LINUX / DOCKER VERSION
    Before running, copy the Data folder into the container, e.g.:
-     docker exec -u root sql1 mkdir -p /var/opt/mssql/import
-     docker cp Data/. sql1:/var/opt/mssql/import/
-     docker exec -u root sql1 chmod -R a+rX /var/opt/mssql/import
+     docker exec -u root ecovolt-mssql mkdir -p /var/opt/mssql/import
+     docker cp Data/. ecovolt-mssql:/var/opt/mssql/import/
+     docker exec -u root ecovolt-mssql chmod -R a+rX /var/opt/mssql/import
    The path in @file is resolved INSIDE the container (the SQL Server machine).
    Use .../T2/Weather/Weather_Data.csv to load the T2 snapshot.
 
