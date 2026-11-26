@@ -101,8 +101,11 @@ for _ in $(seq 1 60); do
   if [ "$status" = "healthy" ] || [ "$status" = "running" ]; then echo " - $status"; break; fi
   echo -n "."; sleep 2
 done
-docker exec "$CONTAINER" test -d /dw_data/T1/PowerMaster \
-  || { echo "ERROR: /dw_data/T1/PowerMaster is not visible in the container (check DATA_DIR and :z)" >&2; exit 1; }
+# The warehouse scripts (without / with) read the CSVs from the /dw_data mount.
+if [[ " ${STEPS[*]} " == *" without "* || " ${STEPS[*]} " == *" with "* ]]; then
+  docker exec "$CONTAINER" test -d /dw_data/T1/PowerMaster \
+    || { echo "ERROR: /dw_data/T1/PowerMaster is not visible in the container (check DATA_DIR and :z)" >&2; exit 1; }
+fi
 
 # ---------- fresh start ----------
 if $RESET; then
@@ -119,6 +122,14 @@ fi
 for step in "${STEPS[@]}"; do
   case "$step" in
     sources)
+      # The source scripts (Weather_linux_docker.sql, load_snapshot_docker_linux.sql) read the CSVs from
+      # /var/opt/mssql/import - a copy inside the container (the warehouse scripts use the /dw_data mount).
+      echo
+      echo "=================== copying Data/ to $CONTAINER:/var/opt/mssql/import ==================="
+      [ -d Data ] || { echo "ERROR: Data/ not found in $(pwd)" >&2; exit 1; }
+      docker exec -u root "$CONTAINER" mkdir -p /var/opt/mssql/import
+      docker cp Data/. "$CONTAINER":/var/opt/mssql/import/
+      docker exec -u root "$CONTAINER" chmod -R a+rX /var/opt/mssql/import
       run_file "$(find_one PowerMaster_schema.sql)"
       run_file "$(find_one Weather_linux_docker.sql)"
       run_file "$(find_one load_snapshot_docker_linux.sql)"
