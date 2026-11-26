@@ -33,7 +33,7 @@ services:
       - mssql-data:/var/opt/mssql
       # Generator output (T1/, T2/, T2_delta/) -> BULK INSERT paths /dw_data/T1/... and /dw_data/T2/...
       # On SELinux hosts (Fedora/RHEL) use ":ro,z" instead of ":ro".
-      - ${DATA_DIR:-../Data}:/dw_data:ro
+      - ${DATA_DIR:-../Data}:/dw_data:ro,z
       # This folder -> the SQL scripts are run inside the container by run_sql.sh.
       - .:/sql:ro
     healthcheck:
@@ -55,7 +55,7 @@ services:
       - "4000:4000"
     volumes:
       # Data model (energy_production.cube.yml); Cube reloads it automatically in development mode.
-      - ./model:/cube/conf/model
+      - ./model:/cube/conf/model:z
     extra_hosts:
       # Lets the container reach a SQL Server running on the host (native Linux needs this mapping;
       # Docker Desktop on WSL provides host.docker.internal itself - the mapping does no harm there).
